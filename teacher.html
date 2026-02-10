@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Lehrer Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+        <span>Lehrer-Bereich</span>
+        <button onclick="logout()">Logout</button>
+    </div>
+
+    <div class="container">
+        <h2>Klasse wählen</h2>
+        <select id="class-select" onchange="loadStudents()">
+            <option value="9b">Klasse 9b</option>
+            <option value="10a">Klasse 10a</option>
+        </select>
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Schüler</th>
+                        <th>Fach</th>
+                        <th>Eintrag</th>
+                        <th>Aktion</th>
+                    </tr>
+                </thead>
+                <tbody id="student-list">
+                    </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+ 
