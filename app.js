@@ -1,13 +1,13 @@
-// DEINE FIREBASE KONFIGURATION (VON DER FIREBASE WEBSITE)
+// DEINE FIREBASE KONFIGURATION (VON DER FIREBASE WEBSITE
 const firebaseConfig = {
-    apiKey: "DEIN_API_KEY",
-    authDomain: "DEIN_PROJEKT.firebaseapp.com",
-    projectId: "DEIN_PROJEKT",
-    storageBucket: "DEIN_PROJEKT.appspot.com",
-    messagingSenderId: "DEINE_ID",
-    appId: "DEINE_APP_ID"
-};
-
+  apiKey: "AIzaSyD7vr-NMiuHJ4DU-vwQkv5Fot9NPKhlGsU",
+  authDomain: "logbuch-aac70.firebaseapp.com",
+  projectId: "logbuch-aac70",
+  storageBucket: "logbuch-aac70.firebasestorage.app",
+  messagingSenderId: "839675745417",
+  appId: "1:839675745417:web:94f67ee588bbc4f647e258",
+  measurementId: "G-51V7SR2889"
+}; 
 firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth();
 const db = firebase.firestore();
