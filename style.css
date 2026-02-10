@@ -1,0 +1,22 @@
+:root {
+    --bg: #f4f7f6;
+    --dark: #1a302b;
+    --accent: #d4a373;
+    --white: #ffffff;
+}
+
+body { font-family: 'Segoe UI', sans-serif; background: var(--bg); margin: 0; padding: 0; }
+.login-card { background: var(--white); padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); width: 300px; margin: 100px auto; text-align: center; }
+input { width: 100%; padding: 12px; margin: 10px 0; border-radius: 8px; border: 1px solid #ddd; box-sizing: border-box; }
+.main-btn { background: var(--dark); color: white; border: none; padding: 15px; width: 100%; border-radius: 8px; cursor: pointer; font-weight: bold; }
+.role-selector { display: flex; gap: 10px; margin-bottom: 20px; }
+.role-btn { flex: 1; padding: 10px; border: 1px solid var(--dark); background: none; cursor: pointer; border-radius: 8px; }
+.role-btn.active { background: var(--dark); color: white; }
+
+/* Dashboard Styles */
+.nav { background: var(--dark); color: white; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+.container { padding: 20px; max-width: 800px; margin: auto; }
+.teacher-alert-box { background: #fff3cd; border: 1px solid #ffeeba; padding: 15px; border-radius: 10px; margin-bottom: 20px; }
+.log-entry { padding: 10px 0; border-bottom: 1px solid rgba(0,0,0,0.05); }
+table { width: 100%; border-collapse: collapse; background: white; border-radius: 10px; overflow: hidden; }
+th, td { padding: 12px; text-align: left; border-bottom: 1px solid #eee; }
